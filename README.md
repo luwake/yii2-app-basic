@@ -8,6 +8,7 @@ DIRECTORY STRUCTURE
       app/models/             contains model classes
       app/widgets/            contains widget classes
       config/                 contains application configurations
+      node_modules/           contains dependent npm and bower packages
       resources/
       resources/mail/         contains view files for e-mails
       resources/views/        contains view files for the Web application
