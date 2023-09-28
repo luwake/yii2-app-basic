@@ -20,21 +20,20 @@ features to your application.
 DIRECTORY STRUCTURE
 -------------------
 
-app/
-      assets/             contains assets definition
-      commands/           contains console commands (controllers)
-      controllers/        contains Web controller classes
-      models/             contains model classes
-      widgets/            contains widget classes
-config/                   contains application configurations
-resources/
-      mail/               contains view files for e-mails
-      views/              contains view files for the Web application
-storage/
+      app/
+      app/assets/             contains assets definition
+      app/commands/           contains console commands (controllers)
+      app/controllers/        contains Web controller classes
+      app/models/             contains model classes
+      app/widgets/            contains widget classes
+      config/                   contains application configurations
+      resources/
+      resources/mail/               contains view files for e-mails
+      resources/views/              contains view files for the Web application
       runtime/            contains files generated during runtime
-tests/                    contains various tests for the basic application
-vendor/                   contains dependent 3rd-party packages
-web/                      contains the entry script and Web resources
+      tests/                    contains various tests for the basic application
+      vendor/                   contains dependent 3rd-party packages
+      web/                      contains the entry script and Web resources
 
 
 
