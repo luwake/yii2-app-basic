@@ -5,17 +5,16 @@ $db = require __DIR__ . '/db.php';
 
 $config = [
     'id' => 'basic',
-    'basePath' => __ROOT__,
+    'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'aliases' => [
         '@bower' => '@app/node_modules',
-        '@npm' => '@app/node_modules',
-        '@views' => '@app/resources/views'
+        '@npm' => '@app/node_modules'
     ],
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => 'uerkumqjsgsp75dg6hqbzxin7394dqdu',
+            'cookieValidationKey' => '',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -52,10 +51,7 @@ $config = [
         ],
         */
     ],
-    'params' => $params,
-    'on beforeRequest' => function(){
-        \Yii::$app->setViewPath('@views');
-    },
+    'params' => $params
 ];
 
 if (YII_ENV_DEV) {
